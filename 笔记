@@ -221,4 +221,14 @@ Java是单继承，一个类的直接父类只有唯一一个 即：class D exte
 抽象方法：public abstract void xxx();
 抽象类：抽象方法所在的类，必须是抽象类 public abstract class xxx{}
 
+字符串常量池：程序当中直接写上的双引号字符串，就在字符串常量池中。
+对于基本类型：==是进行数值比较
+对于引用类型来说，==是进行地址值来比较
 
+字符串内容比较方法 ：
+1、public boolean equals(Object obj):参数可以是任何对象，只有参数是一个字符串并且内容相同才会返回True，否则就会返回false，如：str1.equals(str2),此方法具有对称性
+如果比较双方一个常量一个变量，推荐把常量写在前面。如推荐 “abc”.equals(str)
+2/public boolean equalsIgnoreCase(String str):忽略大小写进行内容比较
+
+String中与获取相关的常用方法：
+1、
